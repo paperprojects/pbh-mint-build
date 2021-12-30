@@ -1,0 +1,217 @@
+html, body, .main {
+  background-color: #E7E7E7;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.mainBack {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.mainTop {
+  height: 400px;
+  width: 100%;
+  background-color: #F7F7F7;
+}
+
+.mainBottom {
+  height: 250px;
+  width: 100%;
+  background-color: #E7E7E7;
+  position: relative;
+}
+
+.mainShadow {
+  width: 50%;
+  height: 30px;
+  background-color: #000000;
+  opacity: 0.05;
+  border-radius: 50%;
+  position: absolute;
+  top: 90%;
+  left: 25%;
+}
+
+.sh1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.greenBox {
+  background-color: #B7F595;
+  color: white;
+  border-radius: 5px;
+  font-style: italic;
+  padding: 0px 10px;
+}
+
+.sh3 {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.sP {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+
+.paperFont {
+  font-family: "Noto Serif", serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.spacerSmall {
+  height: 16px;
+	width: 16px;
+}
+
+.spacerLarge {
+  height: 32px;
+	width: 32px;
+}
+
+.spacerTop {
+  height: 70px;
+}
+
+.bag {
+    height: 360px;
+    /* height: 450px; */
+    width: calc(360px * 0.7);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: contain;
+    padding: 0px;
+    font-style: italic;
+}
+
+.weightHeavy {
+  font-weight: 800;
+}
+
+.colorLight {
+  color: #F7F7F7;
+}
+
+.inlinewrapper {
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.block{
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.skew {
+  transform: skew(-7deg, 0);
+}
+
+.custombtn {
+	font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+
+  transform: skew(-7deg, 0);
+	width: 150px;
+	height: 60px;
+  padding-top: 10px;
+  
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.blink {
+  animation: blinker 1s ease-out infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background-color:rgba(0, 0, 0, 0);
+  }
+}
+
+.custombtn:hover {
+  animation-play-state: paused;
+
+}
+
+.custombtn:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+
+@keyframes confetti-slow {
+  0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+  100% {
+      transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+  }
+}
+@keyframes confetti-medium {
+  0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+  100% {
+      transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+  }
+}
+@keyframes confetti-fast {
+  0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+  100% {
+      transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+  }
+}
+
+.confetti-container {
+  perspective: 700px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.confetti {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  border-radius: 0%;
+}
+.confetti--animation-slow {
+  animation: confetti-slow 5s linear 1 forwards;
+}
+.confetti--animation-medium {
+  animation: confetti-medium 3s linear 1 forwards;
+}
+.confetti--animation-fast {
+  animation: confetti-fast 2s linear 1 forwards;
+}
