@@ -1,14 +1,12 @@
 {
-  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "CONTRACT_ADDRESS": "0x6604e32adf67f1c3cc65b8c9f8f768babba3f54d",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x6604e32adf67f1c3cc65b8c9f8f768babba3f54d",
   "NETWORK": {
-    "NAME": "Ethereum",
+    "NAME": "Rinkeby",
     "SYMBOL": "ETH",
-    "ID": 1
+    "ID": 4
   },
   "SYMBOL": "PBH",
-  "MAX_SUPPLY": 10008,
-  "COST": 0.04,
   "GAS_LIMIT": 285000,
   "MARKETPLACE_LINK": "https://opensea.io/collection/paper-bag-heads"
 }
